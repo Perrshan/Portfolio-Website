@@ -1,0 +1,150 @@
+* {
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333; /* Dark background color */
+    color: #fff; /* Text color */
+    padding: 10px 0; /* Add padding to top and bottom */
+    display: flex; /* Use flexbox */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+/* Navigation styling */
+nav ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline; /* Display navigation items horizontally */
+    margin-right: 20px; /* Add space between navigation items */
+}
+
+nav ul li a {
+    text-decoration: none; /* Remove underline from links */
+    color: #fff; /* Text color */
+    font-weight: bold; /* Make text bold */
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    text-decoration: underline; /* Underline links on hover */
+}
+
+h1 {
+    font-family: "Roboto Slab", serif;
+    font-size: 36px;
+    font-weight: bold;
+    text-align: center;
+    color: #333;
+    background-color: #f0f0f0; /* Change this to your desired background color */
+    padding: 20px;
+    border-bottom: 1px solid #ccc; /* Add a 1px solid line with a light gray color */
+    padding-bottom: 20px; /* Add some padding between each project */
+    margin-bottom: 20px; /* Add some margin between each project */
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+p {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.container {
+    width: 80%; /* Adjust width as needed */
+    margin: 0 auto; /* Center align the container */
+}
+
+.project {
+    width: calc(33.33% - 20px); /* Adjust width as needed */
+    text-align: center;
+    border-bottom: 1px solid #ccc; /* Add a 1px solid line with a light gray color */
+    padding-bottom: 20px; /* Add some padding between each project */
+    margin-bottom: 20px; /* Add some margin between each project */
+}
+
+.project img {
+    max-width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.project img:hover {
+    transform: scale(1.1); /* Increase the size by 10% */
+}
+
+.comment a {
+    display: block; /* Make the link a block-level element */
+    background-color: grey;
+    color: white; /* Text color */
+    padding: 10px;
+    text-align: center; /* Center-align the text */
+    text-decoration: none;
+    border-radius: 5px; /* Add rounded corners */
+}
+
+.comment a:hover {
+    background-color: darkgrey; /* Change background color on hover */
+}
+
+.content {
+    display: flex;
+    align-items: center; /* Center vertically */
+}
+
+.home_pics img {
+    width: 400px; /* Adjust the width to your desired size */
+    flex: 0 0 auto; /* Do not grow or shrink */
+    margin-right: 20px; /* Adjust spacing between image and paragraph */
+}
+
+.desc {
+    flex: 1; /* Take remaining space */
+    background-color: #e3e1e1;
+    padding: 20px;
+    margin: 20px;
+}
+
+.content-picture {
+    grid-column: 1 / span 1; /* Position the picture in the first column */
+  }
+
+.content-picture img {
+    max-width: 100%;
+    height: auto;
+}
+
+.comment_section {
+    margin: 20px;
+}
+
+.like-button {
+    width: 50px; /* Adjust width as needed */
+    height: 50px; /* Adjust height as needed */
+    font-size: 16px; /* Adjust font size as needed */
+    margin: 20px;
+}
+
+.comment-button {
+    width: 150px;
+    height: 50px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; /* Distribute items horizontally */
+    align-items: center; /* Center items vertically */
+    background-color: #aeaaaa; /* Dark background color */
+}

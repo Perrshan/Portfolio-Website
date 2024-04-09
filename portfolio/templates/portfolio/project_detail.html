@@ -1,0 +1,55 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Comments</title>
+    <link rel="stylesheet" type="text/css" href="{% static '/style/style.css' %}">
+</head>
+<body>
+    <h1>{{ project.name }} Comment Page</h1>
+    <div class="content">
+        <div class="comment_section">
+            <p><strong>Description:</strong> {{ project.description }}</p>
+
+            <!-- Like button -->
+            <form method="post">
+                {% csrf_token %}
+                <button type="submit" name="like" class="like-button">Like</button>
+            </form>
+
+            <!-- Comments -->
+            <h2>Comments</h2>
+            <ul>
+                {% for comment in comments %}
+                    <li>{{ comment.text }} - {{ comment.user.username }}</li>
+                {% endfor %}
+            </ul>
+
+            <!-- Comment form -->
+            <form method="post">
+                {% csrf_token %}
+                {{ comment_form.as_p }}
+                <button type="submit" class="comment-button">Add Comment</button>
+            </form>
+        </div>
+
+        <div class="content-picture">
+            <img src="{% static project.picture %}" alt="{{ project.name }}">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Xave Perry</p>
+        <p>Email: xaveperry@gmail.com</p>
+        <nav>
+            <ul>
+                <li><a href="{% url 'index' %}">Home</a></li>
+                <li><a href="{% url 'portfolio' %}">Portfolio</a></li>
+            </ul>
+        </nav>
+    </footer>
+</body>
+</html>
