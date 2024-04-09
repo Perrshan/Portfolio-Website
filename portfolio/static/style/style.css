@@ -5,35 +5,34 @@
 }
 
 header {
-    background-color: #333; /* Dark background color */
-    color: #fff; /* Text color */
-    padding: 10px 0; /* Add padding to top and bottom */
-    display: flex; /* Use flexbox */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+    background-color: #333;
+    color: #fff; 
+    padding: 10px 0; 
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
 }
 
-/* Navigation styling */
 nav ul {
-    list-style-type: none; /* Remove bullet points */
+    list-style-type: none; 
     margin: 0;
     padding: 0;
 }
 
 nav ul li {
-    display: inline; /* Display navigation items horizontally */
-    margin-right: 20px; /* Add space between navigation items */
+    display: inline;
+    margin-right: 20px; 
 }
 
 nav ul li a {
-    text-decoration: none; /* Remove underline from links */
-    color: #fff; /* Text color */
-    font-weight: bold; /* Make text bold */
+    text-decoration: none; 
+    color: #fff; 
+    font-weight: bold; 
     font-size: 20px;
 }
 
 nav ul li a:hover {
-    text-decoration: underline; /* Underline links on hover */
+    text-decoration: underline;
 }
 
 h1 {
@@ -42,11 +41,11 @@ h1 {
     font-weight: bold;
     text-align: center;
     color: #333;
-    background-color: #f0f0f0; /* Change this to your desired background color */
+    background-color: #f0f0f0; 
     padding: 20px;
-    border-bottom: 1px solid #ccc; /* Add a 1px solid line with a light gray color */
-    padding-bottom: 20px; /* Add some padding between each project */
-    margin-bottom: 20px; /* Add some margin between each project */
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 20px; 
+    margin-bottom: 20px; 
 }
 
 body {
@@ -61,16 +60,16 @@ p {
 }
 
 .container {
-    width: 80%; /* Adjust width as needed */
-    margin: 0 auto; /* Center align the container */
+    width: 80%; 
+    margin: 0 auto; 
 }
 
 .project {
-    width: calc(33.33% - 20px); /* Adjust width as needed */
+    width: calc(33.33% - 20px); 
     text-align: center;
-    border-bottom: 1px solid #ccc; /* Add a 1px solid line with a light gray color */
-    padding-bottom: 20px; /* Add some padding between each project */
-    margin-bottom: 20px; /* Add some margin between each project */
+    border-bottom: 1px solid #ccc; 
+    padding-bottom: 20px; 
+    margin-bottom: 20px; 
 }
 
 .project img {
@@ -82,43 +81,43 @@ p {
 }
 
 .project img:hover {
-    transform: scale(1.1); /* Increase the size by 10% */
+    transform: scale(1.1);
 }
 
 .comment a {
-    display: block; /* Make the link a block-level element */
+    display: block; 
     background-color: grey;
-    color: white; /* Text color */
+    color: white; 
     padding: 10px;
-    text-align: center; /* Center-align the text */
+    text-align: center; 
     text-decoration: none;
-    border-radius: 5px; /* Add rounded corners */
+    border-radius: 5px; 
 }
 
 .comment a:hover {
-    background-color: darkgrey; /* Change background color on hover */
+    background-color: darkgrey; 
 }
 
 .content {
     display: flex;
-    align-items: center; /* Center vertically */
+    align-items: center; 
 }
 
 .home_pics img {
-    width: 400px; /* Adjust the width to your desired size */
-    flex: 0 0 auto; /* Do not grow or shrink */
-    margin-right: 20px; /* Adjust spacing between image and paragraph */
+    width: 400px; 
+    flex: 0 0 auto;
+    margin-right: 20px; 
 }
 
 .desc {
-    flex: 1; /* Take remaining space */
+    flex: 1; 
     background-color: #e3e1e1;
     padding: 20px;
     margin: 20px;
 }
 
 .content-picture {
-    grid-column: 1 / span 1; /* Position the picture in the first column */
+    grid-column: 1 / span 1;
   }
 
 .content-picture img {
@@ -131,9 +130,9 @@ p {
 }
 
 .like-button {
-    width: 50px; /* Adjust width as needed */
-    height: 50px; /* Adjust height as needed */
-    font-size: 16px; /* Adjust font size as needed */
+    width: 50px; 
+    height: 50px; 
+    font-size: 16px; 
     margin: 20px;
 }
 
@@ -144,7 +143,7 @@ p {
 
 footer {
     display: flex;
-    justify-content: space-between; /* Distribute items horizontally */
-    align-items: center; /* Center items vertically */
-    background-color: #aeaaaa; /* Dark background color */
+    justify-content: space-between; 
+    align-items: center; 
+    background-color: #aeaaaa; 
 }

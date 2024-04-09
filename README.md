@@ -2,7 +2,7 @@
 
 I wanted to test out the capabilities of using Django with Python to make a website rather than just hard coding a website using only web development coding languages. I was able to learn a lot and was very pleased with the tools that Django offers to make websites much easier.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/JWTUDnsg6Mg)
 
 # Web Pages
 
